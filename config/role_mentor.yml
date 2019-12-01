@@ -743,9 +743,9 @@ production:
       invitation: true
       survey: false
       password_retrieval: true
-      submitted_content: true
+      submitted_content: false
       eula: true
-      student_review: true
+      student_review: false
       publishing: true
       export_file: false
       response: true
@@ -762,7 +762,7 @@ production:
       advice: false
       analytic: false
       versions: true
-      student_quiz: true
+      student_quiz: false
     pages:
       home: true
       expired: true

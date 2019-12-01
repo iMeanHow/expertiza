@@ -33,8 +33,8 @@ class Role < ActiveRecord::Base
     name['Mentor']
   end
 
-  def self.mentor
-    @@mentor_role ||= find_by name: 'Mentor'
+  def self.student
+    @@mentor_role ||= find_by name: 'Student'
   end
 
   def student?
@@ -147,7 +147,7 @@ class Role < ActiveRecord::Base
   # determine if the current role has all the privileges of the parameter role
   def hasAllPrivilegesOf(target_role)
     privileges = {}
-    privileges["Mentor"]=0
+    # privileges["Mentor"]=0
     privileges["Student"] = 1
     privileges["Teaching Assistant"] = 2
     privileges["Instructor"] = 3
